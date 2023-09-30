@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Project</title>
+</head>
+ 
+<body>
+    <p>Examples of Programming Languages: </p>
+    <ul class="languages">
+        <li id="first">JavaScript</li>
+        <p>Interactive Websites</p>
+        <li id="second">Kotlin</li>
+        <p>Android Apps</p>
+        <li id="third">Swift</li>
+        <p>IOS Apps</p>
+    </ul>
+
+    <br><br>
+    <h1> Clicks: <span id="clicks">0</span> </h1>
+    <button type="buttom" onclick="add()">+</button>
+
+    <script>
+        // let x1 = document.getElementById('second');
+        // let x2 = document.getElementsByClassName('languages');
+        // let x3 = document.getElementsByTagName('li');
+        // console.log(x1);
+        // let x4 = document.querySelectorALL('.languages p');
+        // console.log(x4);
+
+        //   let android = document.querySelector('#second');
+        //   android.innerText = "Java";
+        //   android.style.color = "red";
+
+        // let list = document.querySelector('.languages');
+        // let python = document.createElement('li')
+        // python.innerText = "Python"
+        // list.append(python)
+        // console.log(list);
+
+        // let swift = document.querySelectorAll("li")[2]
+        // swift.remove
+
+        let clicks=0;
+        function add(){
+            clicks++;
+            document.getElementById('clicks').innerText = clicks;
+        }
+        
+    </script>
+</body>
+
+
+</html>
